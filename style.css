@@ -1,0 +1,914 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.4);
+  background: #fff;
+  display: grid;
+  grid-template-rows: repeat(31, 1.3rem);
+  grid-template-columns: repeat(44, 1.3rem);
+  overflow: hidden;
+  animation: mountWorld 2s forwards cubic-bezier(.3,0,.1,1);
+}
+
+@keyframes mountWorld {
+    0% {
+        grid-gap: 500px;
+    }
+    100% {
+        grid-gap: 0px;
+    }
+}
+
+@keyframes flipCountries {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square.white:hover{
+    transform: none;
+}
+
+.white {
+  background-color: #eeeee7;
+}
+.blue {
+  background-color: #344970;
+  animation: flipCountries 2s cubic-bezier(.3,0,.1,1);
+}
+.yellow {
+  background-color: #f8d309;
+  animation: flipCountries 2s cubic-bezier(.3,0,.1,1);
+}
+.red {
+  background-color: #c5081d;
+  animation: flipCountries 2s cubic-bezier(.3,0,.1,1);
+}
+
+.square {
+  border: 0.1px solid black;
+  transition: transform 0.1s ease-in;
+}
+
+.square:hover {
+    transform: scale(1.15);
+}
+
+.square_1,
+.square_2,
+.square_3,
+.square_4,
+.square_5,
+.square_6,
+.square_7,
+.square_8,
+.square_9,
+.square_10,
+.square_11,
+.square_12,
+.square_13 {
+    border-top: none;
+}
+
+.square_13,
+.square_48,
+.square_49,
+.square_74,
+.square_81,
+.square_101,
+.square_133,
+.square_8,
+.square_172,
+.square_216,
+.square_249,
+.square_250,
+.square_262 {
+    border-right: none;
+}
+
+.square_262,
+.square_261,
+.square_260,
+.square_259,
+.square_256,
+.square_255,
+.square_254 {
+    border-bottom: none;
+}
+
+.square_1,
+.square_14,
+.square_50,
+.square_82,
+.square_102,
+.square_134,
+.square_140,
+.square_173,
+.square_219,
+.square_251,
+.square_254 {
+    border-left: none;
+}
+
+.square_1 {
+  grid-area: 1 / 1 / 5 / 3;
+}
+.square_2 {
+  grid-area: 1 / 3 / 4 / 5;
+}
+.square_3 {
+  grid-area: 1 / 5 / 4 / 12;
+}
+.square_4 {
+  grid-area: 1 / 12 / 3 / 20;
+}
+.square_5 {
+  grid-area: 1 / 20 / 10 / 21;
+}
+.square_6 {
+  grid-area: 1 / 21 / 6 / 24;
+}
+.square_7 {
+  grid-area: 1 / 24 / 4 / 26;
+}
+.square_8 {
+  grid-area: 1 / 26 / 4 / 28;
+}
+.square_9 {
+  grid-area: 1 / 28 / 4 / 29;
+}
+.square_10 {
+  grid-area: 1 / 29 / 4 / 31;
+}
+.square_11 {
+  grid-area: 1 / 31 / 4 / 35;
+}
+.square_12 {
+  grid-area: 1 / 35 / 4 / 43;
+}
+.square_13 {
+  grid-area: 1 / 43 / 4 / 45;
+}
+.square_14 {
+  grid-area: 5 / 1 / 6 / 3;
+}
+.square_15 {
+  grid-area: 4 / 3 / 5 / 5;
+}
+.square_16 {
+  grid-area: 5 / 3 / 6 / 5;
+}
+.square_17 {
+  grid-area: 4 / 5 / 5 / 12;
+}
+.square_18 {
+  grid-area: 5 / 5 / 6 / 8;
+}
+.square_19 {
+  grid-area: 5 / 8 / 6 / 11;
+}
+.square_20 {
+  grid-area: 5 / 11 / 6 / 12;
+}
+.square_21 {
+  grid-area: 3 / 12 / 4 / 14;
+}
+.square_22 {
+  grid-area: 3 / 14 / 4 / 17;
+}
+.square_23 {
+  grid-area: 4 / 12 / 6 / 13;
+}
+.square_24 {
+  grid-area: 4 / 13 / 6 / 14;
+}
+.square_25 {
+  grid-area: 4 / 14 / 5 / 17;
+}
+.square_26 {
+  grid-area: 5 / 14 / 6 / 15;
+}
+.square_27 {
+  grid-area: 5 / 15 / 8 / 16;
+}
+.square_28 {
+  grid-area: 5 / 16 / 8 / 17;
+}
+.square_29 {
+  grid-area: 3 / 17 / 7 / 20;
+}
+.square_30 {
+  grid-area: 7 / 17 / 8 / 20;
+}
+.square_31 {
+  grid-area: 6 / 12 / 9 / 13;
+}
+.square_32 {
+  grid-area: 7 / 13 / 8 / 15;
+}
+.square_33 {
+  grid-area: 6 / 21 / 8 / 22;
+}
+.square_34 {
+  grid-area: 6 / 22 / 8 / 23;
+}
+.square_35 {
+  grid-area: 6 / 23 / 7 / 24;
+}
+.square_36 {
+  grid-area: 7 / 23 / 8 / 24;
+}
+.square_37 {
+  grid-area: 4 / 24 / 5 / 26;
+}
+.square_38 {
+  grid-area: 5 / 24 / 6 / 26;
+}
+.square_39 {
+  grid-area: 4 / 26 / 7 / 28;
+}
+.square_40 {
+  grid-area: 4 / 28 / 5 / 29;
+}
+.square_41 {
+  grid-area: 5 / 28 / 7 / 29;
+}
+.square_42 {
+  grid-area: 4 / 29 / 6 / 31;
+}
+.square_43 {
+  grid-area: 6 / 29 / 7 / 30;
+}
+.square_44 {
+  grid-area: 4 / 31 / 6 / 35;
+}
+.square_45 {
+  grid-area: 6 / 30 / 7 / 35;
+}
+.square_46 {
+  grid-area: 4 / 35 / 6 / 43;
+}
+.square_47 {
+  grid-area: 6 / 35 / 7 / 43;
+}
+.square_48 {
+  grid-area: 4 / 43 / 6 / 45;
+}
+.square_49 {
+  grid-area: 6 / 43 / 7 / 45;
+}
+.square_50 {
+  grid-area: 6 / 1 / 9 / 3;
+}
+.square_51 {
+  grid-area: 6 / 3 / 9 / 5;
+}
+.square_52 {
+  grid-area: 6 / 5 / 8 / 12;
+}
+.square_53 {
+  grid-area: 8 / 5 / 9 / 6;
+}
+.square_54 {
+  grid-area: 8 / 6 / 9 / 7;
+}
+.square_55 {
+  grid-area: 8 / 7 / 13 / 12;
+}
+.square_56 {
+  grid-area: 6 / 13 / 7 / 15;
+}
+.square_57 {
+  grid-area: 9 / 12 / 14 / 13;
+}
+.square_58 {
+  grid-area: 8 / 13 / 12 / 15;
+}
+.square_59 {
+  grid-area: 8 / 15 / 9 / 16;
+}
+.square_60 {
+  grid-area: 8 / 16 / 9 / 19;
+}
+.square_61 {
+  grid-area: 8 / 19 / 9 / 20;
+}
+.square_62 {
+  grid-area: 9 / 15 / 10 / 16;
+}
+.square_63 {
+  grid-area: 9 / 16 / 10 / 20;
+}
+.square_64 {
+  grid-area: 8 / 21 / 10 / 22;
+}
+.square_65 {
+  grid-area: 8 / 22 / 10 / 23;
+}
+.square_66 {
+  grid-area: 8 / 23 / 9 / 25;
+}
+.square_67 {
+  grid-area: 6 / 24 / 8 / 26;
+}
+.square_68 {
+  grid-area: 9 / 23 / 11 / 25;
+}
+.square_69 {
+  grid-area: 8 / 25 / 12 / 26;
+}
+.square_70 {
+  grid-area: 7 / 26 / 13 / 35;
+}
+.square_71 {
+  grid-area: 7 / 35 / 12 / 38;
+}
+.square_72 {
+  grid-area: 7 / 38 / 9 / 42;
+}
+.square_73 {
+  grid-area: 7 / 42 / 9 / 43;
+}
+.square_74 {
+  grid-area: 7 / 43 / 9 / 45;
+}
+.square_75 {
+  grid-area: 9 / 38 / 12 / 39;
+}
+.square_76 {
+  grid-area: 9 / 39 / 10 / 40;
+}
+.square_77 {
+  grid-area: 10 / 39 / 12 / 41;
+}
+.square_78 {
+  grid-area: 9 / 40 / 10 / 41;
+}
+.square_79 {
+  grid-area: 9 / 41 / 12 / 42;
+}
+.square_80 {
+  grid-area: 9 / 42 / 12 / 43;
+}
+.square_81 {
+  grid-area: 9 / 43 / 12 / 45;
+}
+.square_82 {
+  grid-area: 9 / 1 / 13 / 3;
+}
+.square_83 {
+  grid-area: 9 / 3 / 13 / 5;
+}
+.square_84 {
+  grid-area: 9 / 5 / 13 / 7;
+}
+.square_85 {
+  grid-area: 12 / 13 / 14 / 15;
+}
+.square_86 {
+  grid-area: 10 / 15 / 16 / 20;
+}
+.square_87 {
+  grid-area: 10 / 20 / 14 / 21;
+}
+.square_88 {
+  grid-area: 10 / 21 / 11 / 22;
+}
+.square_89 {
+  grid-area: 10 / 22 / 11 / 23;
+}
+.square_90 {
+  grid-area: 11 / 21 / 12 / 22;
+}
+.square_91 {
+  grid-area: 12 / 21 / 13 / 22;
+}
+.square_92 {
+  grid-area: 11 / 22 / 12 / 23;
+}
+.square_93 {
+  grid-area: 12 / 22 / 13 / 23;
+}
+.square_94 {
+  grid-area: 11 / 23 / 12 / 24;
+}
+.square_95 {
+  grid-area: 11 / 24 / 12 / 25;
+}
+.square_96 {
+  grid-area: 12 / 23 / 13 / 26;
+}
+.square_97 {
+  grid-area: 12 / 35 / 13 / 39;
+}
+.square_98 {
+  grid-area: 12 / 39 / 15 / 41;
+}
+.square_99 {
+  grid-area: 12 / 41 / 15 / 42;
+}
+.square_100 {
+  grid-area: 12 / 42 / 15 / 43;
+}
+.square_101 {
+  grid-area: 12 / 43 / 15 / 45;
+}
+.square_102 {
+  grid-area: 13 / 1 / 15 / 3;
+}
+.square_103 {
+  grid-area: 13 / 3 / 15 / 5;
+}
+.square_104 {
+  grid-area: 13 / 5 / 15 / 9;
+}
+.square_105 {
+  grid-area: 13 / 9 / 15 / 11;
+}
+.square_106 {
+  grid-area: 13 / 11 / 15 / 12;
+}
+.square_107 {
+  grid-area: 14 / 12 / 15 / 13;
+}
+.square_108 {
+  grid-area: 14 / 13 / 15 / 14;
+}
+.square_109 {
+  grid-area: 14 / 14 / 15 / 15;
+}
+.square_110 {
+  grid-area: 14 / 20 / 16 / 21;
+}
+.square_111 {
+  grid-area: 13 / 21 / 17 / 26;
+}
+.square_112 {
+  grid-area: 13 / 26 / 14 / 36;
+}
+.square_113 {
+  grid-area: 14 / 26 / 16 / 27;
+}
+.square_114 {
+  grid-area: 14 / 27 / 16 / 28;
+}
+.square_115 {
+  grid-area: 14 / 28 / 15 / 29;
+}
+.square_116 {
+  grid-area: 15 / 28 / 16 / 29;
+}
+.square_117 {
+  grid-area: 14 / 29 / 16 / 30;
+}
+.square_118 {
+  grid-area: 14 / 30 / 15 / 36;
+}
+.square_119 {
+  grid-area: 15 / 30 / 17 / 31;
+}
+.square_120 {
+  grid-area: 15 / 31 / 17 / 33;
+}
+.square_121 {
+  grid-area: 15 / 33 / 17 / 35;
+}
+.square_122 {
+  grid-area: 15 / 35 / 17 / 36;
+}
+.square_123 {
+  grid-area: 13 / 36 / 14 / 37;
+}
+.square_124 {
+  grid-area: 14 / 36 / 15 / 37;
+}
+.square_125 {
+  grid-area: 15 / 36 / 16 / 37;
+}
+.square_126 {
+  grid-area: 16 / 36 / 17 / 37;
+}
+.square_127 {
+  grid-area: 13 / 37 / 14 / 39;
+}
+.square_128 {
+  grid-area: 14 / 37 / 15 / 39;
+}
+.square_129 {
+  grid-area: 15 / 37 / 17 / 39;
+}
+.square_130 {
+  grid-area: 15 / 39 / 17 / 41;
+}
+.square_131 {
+  grid-area: 15 / 41 / 17 / 42;
+}
+.square_132 {
+  grid-area: 15 / 42 / 17 / 43;
+}
+.square_133 {
+  grid-area: 15 / 43 / 18 / 45;
+}
+.square_134 {
+  grid-area: 15 / 1 / 16 / 3;
+}
+.square_135 {
+  grid-area: 15 / 3 / 16 / 4;
+}
+.square_136 {
+  grid-area: 15 / 4 / 16 / 5;
+}
+.square_137 {
+  grid-area: 15 / 5 / 16 / 10;
+}
+.square_138 {
+  grid-area: 15 / 10 / 16 / 13;
+}
+.square_139 {
+  grid-area: 15 / 13 / 16 / 15;
+}
+.square_140 {
+  grid-area: 16 / 1 / 20 / 3;
+}
+.square_141 {
+  grid-area: 16 / 3 / 20 / 4;
+}
+.square_142 {
+  grid-area: 16 / 4 / 17 / 5;
+}
+.square_143 {
+  grid-area: 17 / 4 / 20 / 5;
+}
+.square_144 {
+  grid-area: 16 / 5 / 17 / 8;
+}
+.square_145 {
+  grid-area: 16 / 8 / 17 / 12;
+}
+.square_146 {
+  grid-area: 17 / 5 / 20 / 8;
+}
+.square_147 {
+  grid-area: 17 / 8 / 20 / 13;
+}
+.square_148 {
+  grid-area: 16 / 12 / 17 / 16;
+}
+.square_149 {
+  grid-area: 17 / 13 / 20 / 16;
+}
+.square_150 {
+  grid-area: 16 / 16 / 18 / 18;
+}
+.square_151 {
+  grid-area: 18 / 16 / 22 / 18;
+}
+.square_152 {
+  grid-area: 16 / 18 / 20 / 21;
+}
+.square_153 {
+  grid-area: 17 / 21 / 20 / 23;
+}
+.square_154 {
+  grid-area: 17 / 23 / 20 / 26;
+}
+.square_155 {
+  grid-area: 16 / 26 / 20 / 27;
+}
+.square_156 {
+  grid-area: 16 / 27 / 20 / 30;
+}
+.square_157 {
+  grid-area: 17 / 30 / 19 / 31;
+}
+.square_158 {
+  grid-area: 17 / 31 / 19 / 33;
+}
+.square_159 {
+  grid-area: 17 / 33 / 19 / 34;
+}
+.square_160 {
+  grid-area: 17 / 34 / 19 / 35;
+}
+.square_161 {
+  grid-area: 17 / 35 / 18 / 36;
+}
+.square_162 {
+  grid-area: 18 / 35 / 19 / 36;
+}
+.square_163 {
+  grid-area: 17 / 36 / 18 / 37;
+}
+.square_164 {
+  grid-area: 18 / 36 / 19 / 37;
+}
+.square_165 {
+  grid-area: 17 / 37 / 18 / 39;
+}
+.square_166 {
+  grid-area: 18 / 37 / 19 / 39;
+}
+.square_167 {
+  grid-area: 17 / 39 / 18 / 41;
+}
+.square_168 {
+  grid-area: 17 / 41 / 18 / 42;
+}
+.square_169 {
+  grid-area: 17 / 42 / 18 / 43;
+}
+.square_170 {
+  grid-area: 18 / 39 / 20 / 41;
+}
+.square_171 {
+  grid-area: 18 / 41 / 20 / 42;
+}
+.square_172 {
+  grid-area: 18 / 42 / 20 / 45;
+}
+.square_173 {
+  grid-area: 20 / 1 / 26 / 3;
+}
+.square_174 {
+  grid-area: 20 / 3 / 25 / 4;
+}
+.square_175 {
+  grid-area: 20 / 4 / 25 / 8;
+}
+.square_176 {
+  grid-area: 20 / 8 / 25 / 13;
+}
+.square_177 {
+  grid-area: 20 / 13 / 25 / 14;
+}
+.square_178 {
+  grid-area: 20 / 14 / 25 / 16;
+}
+.square_179 {
+  grid-area: 22 / 16 / 28 / 18;
+}
+.square_180 {
+  grid-area: 20 / 18 / 28 / 21;
+}
+.square_181 {
+  grid-area: 20 / 21 / 23 / 24;
+}
+.square_182 {
+  grid-area: 20 / 24 / 23 / 26;
+}
+.square_183 {
+  grid-area: 23 / 21 / 28 / 24;
+}
+.square_184 {
+  grid-area: 23 / 24 / 28 / 26;
+}
+.square_185 {
+  grid-area: 20 / 26 / 23 / 27;
+}
+.square_186 {
+  grid-area: 23 / 26 / 28 / 27;
+}
+.square_187 {
+  grid-area: 20 / 27 / 21 / 28;
+}
+.square_188 {
+  grid-area: 21 / 27 / 22 / 28;
+}
+.square_189 {
+  grid-area: 22 / 27 / 23 / 28;
+}
+.square_190 {
+  grid-area: 23 / 27 / 24 / 28;
+}
+.square_191 {
+  grid-area: 20 / 28 / 21 / 30;
+}
+.square_192 {
+  grid-area: 21 / 28 / 23/ 30;
+}
+.square_193 {
+  grid-area: 23 / 28 / 24 / 30;
+}
+.square_194 {
+  grid-area: 20 / 30 / 21 / 31;
+}
+.square_195 {
+  grid-area: 21 / 30 / 23 / 31;
+}
+.square_196 {
+  grid-area: 23 / 30 / 24 / 31;
+}
+.square_197 {
+  grid-area: 19 / 30 / 20 / 31;
+}
+.square_198 {
+  grid-area: 19 / 31 / 20 / 33;
+}
+.square_199 {
+  grid-area: 20 / 31 / 21 / 33;
+}
+.square_200 {
+  grid-area: 21 / 31 / 23 / 33;
+}
+.square_201 {
+  grid-area: 23 / 31 / 24 / 33;
+}
+.square_202 {
+  grid-area: 19 / 33 / 20 / 34;
+}
+.square_203 {
+  grid-area: 19 / 34 / 20 / 35;
+}
+.square_204 {
+  grid-area: 19 / 35 / 20 / 36;
+}
+.square_205 {
+  grid-area: 19 / 36 / 20 / 37;
+}
+.square_206 {
+  grid-area: 19 / 37 / 20 / 39;
+}
+.square_207 {
+  grid-area: 20 / 33 / 21 / 35;
+}
+.square_208 {
+  grid-area: 20 / 35 / 21 / 36;
+}
+.square_209 {
+  grid-area: 21 / 33 / 23 / 35;
+}
+.square_210 {
+  grid-area: 21 / 35 / 23 / 36;
+}
+.square_211 {
+  grid-area: 20 / 36 / 23 / 39;
+}
+.square_212 {
+  grid-area: 20 / 39 / 21 / 40;
+}
+.square_213 {
+  grid-area: 21 / 39 / 23 / 40;
+}
+.square_214 {
+  grid-area: 20 / 40 / 23 / 41;
+}
+.square_215 {
+  grid-area: 20 / 41 / 23 / 42;
+}
+.square_216 {
+  grid-area: 20 / 42 / 23 / 45;
+}
+.square_217 {
+  grid-area: 23 / 33 / 24 / 38;
+}
+.square_218 {
+  grid-area: 23 / 38 / 24 / 39;
+}
+.square_219 {
+  grid-area: 26 / 1 / 28 / 3;
+}
+.square_220 {
+  grid-area: 25 / 3 / 26 / 4;
+}
+.square_221 {
+  grid-area: 26 / 3 / 28 / 4;
+}
+.square_222 {
+  grid-area: 25 / 4 / 26 / 8;
+}
+.square_223 {
+  grid-area: 26 / 4 / 28 / 8;
+}
+.square_224 {
+  grid-area: 25 / 8 / 26 / 13;
+}
+.square_225 {
+  grid-area: 26 / 8 / 28 / 13;
+}
+.square_226 {
+  grid-area: 25 / 13 / 26 / 14;
+}
+.square_227 {
+  grid-area: 26 / 13 / 28 / 14;
+}
+.square_228 {
+  grid-area: 25 / 14 / 26 / 15;
+}
+.square_229 {
+  grid-area: 26 / 14 / 28 / 15;
+}
+.square_230 {
+  grid-area: 25 / 15 / 26 / 16;
+}
+.square_231 {
+  grid-area: 26 / 15 / 28 / 16;
+}
+.square_232 {
+  grid-area: 28 / 13 / 30 / 14;
+}
+.square_233 {
+  grid-area: 28 / 14 / 30 / 15;
+}
+.square_234 {
+  grid-area: 28 / 15 / 30 / 16;
+}
+.square_235 {
+  grid-area: 28 / 16 / 30 / 18;
+}
+.square_236 {
+  grid-area: 28 / 18 / 30 / 21;
+}
+.square_237 {
+  grid-area: 28 / 21 / 29 / 27;
+}
+.square_238 {
+  grid-area: 28 / 27 / 29 / 30;
+}
+.square_239 {
+  grid-area: 24 / 27 / 28 / 30;
+}
+.square_240 {
+  grid-area: 24 / 30 / 28 / 31;
+}
+.square_241 {
+  grid-area: 28 / 30 / 29 / 31;
+}
+.square_242 {
+  grid-area: 24 / 31 / 28 / 33;
+}
+.square_243 {
+  grid-area: 24 / 33 / 28 / 39;
+}
+.square_244 {
+  grid-area: 28 / 31 / 29 / 39;
+}
+.square_245 {
+  grid-area: 23 / 39 / 28 / 41;
+}
+.square_246 {
+  grid-area: 28 / 39 / 29 / 41;
+}
+.square_247 {
+  grid-area: 23 / 41 / 25 / 42;
+}
+.square_248 {
+  grid-area: 25 / 41 / 28 / 42;
+}
+.square_249 {
+  grid-area: 23 / 42 / 28 / 45;
+}
+.square_250 {
+  grid-area: 28 / 41 / 29 / 45;
+}
+.square_251 {
+  grid-area: 28 / 1 / 30 / 4;
+}
+.square_252 {
+  grid-area: 28 / 4 / 30 / 8;
+}
+.square_253 {
+  grid-area: 28 / 8 / 30 / 13;
+}
+.square_254 {
+  grid-area: 30 / 1 / 32 / 4;
+}
+.square_255 {
+  grid-area: 30 / 4 / 32 / 15;
+}
+.square_256 {
+  grid-area: 31 / 15 / 32 / 18;
+}
+.square_257 {
+  grid-area: 30 / 15 / 31 / 16;
+}
+.square_258 {
+  grid-area: 30 / 16 / 31 / 18;
+}
+.square_259 {
+  grid-area: 30 / 18 / 32 / 21;
+}
+.square_260 {
+  grid-area: 29 / 21 / 32 / 27;
+}
+.square_261 {
+  grid-area: 29 / 27 / 32 / 41;
+}
+.square_262 {
+  grid-area: 29 / 41 / 32 / 45;
+}
